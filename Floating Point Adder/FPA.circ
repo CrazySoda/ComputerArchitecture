@@ -233,9 +233,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="11" loc="(910,350)" name="Rounded Normalizer"/>
+    <comp lib="11" loc="(910,350)" name="Rounded Normalizer">
+      <a name="label" val="R Nrm"/>
+      <a name="labelloc" val="south"/>
+    </comp>
     <comp loc="(910,640)" name="Output Handler">
       <a name="facing" val="south"/>
+      <a name="label" val="OpH"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="13" loc="(300,330)" name="InputHandler"/>
     <comp lib="0" loc="(310,510)" name="Pin">
@@ -252,7 +257,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="UnderFlow"/>
     </comp>
     <comp lib="8" loc="(440,340)" name="main"/>
-    <comp lib="11" loc="(640,350)" name="main"/>
+    <comp lib="11" loc="(640,350)" name="main">
+      <a name="label" val="Normalizer"/>
+      <a name="labelloc" val="south"/>
+    </comp>
     <comp lib="0" loc="(650,70)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
