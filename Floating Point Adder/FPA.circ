@@ -126,6 +126,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(920,600)" to="(920,610)"/>
     <wire from="(250,140)" to="(250,210)"/>
     <wire from="(660,270)" to="(840,270)"/>
+    <wire from="(690,610)" to="(690,740)"/>
     <wire from="(370,330)" to="(370,340)"/>
     <wire from="(780,360)" to="(880,360)"/>
     <wire from="(70,150)" to="(70,550)"/>
@@ -166,14 +167,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(930,350)" to="(930,400)"/>
     <wire from="(300,330)" to="(370,330)"/>
     <wire from="(250,640)" to="(630,640)"/>
-    <wire from="(570,720)" to="(690,720)"/>
+    <wire from="(570,740)" to="(690,740)"/>
     <wire from="(560,750)" to="(560,760)"/>
     <wire from="(170,260)" to="(220,260)"/>
     <wire from="(500,350)" to="(500,360)"/>
     <wire from="(200,210)" to="(250,210)"/>
     <wire from="(70,550)" to="(250,550)"/>
     <wire from="(290,380)" to="(290,400)"/>
-    <wire from="(700,740)" to="(700,830)"/>
     <wire from="(330,340)" to="(330,360)"/>
     <wire from="(470,360)" to="(470,510)"/>
     <wire from="(70,150)" to="(180,150)"/>
@@ -189,7 +189,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(910,350)" to="(930,350)"/>
     <wire from="(920,600)" to="(940,600)"/>
     <wire from="(220,450)" to="(220,610)"/>
-    <wire from="(690,610)" to="(690,720)"/>
+    <wire from="(700,720)" to="(700,830)"/>
     <wire from="(630,150)" to="(650,150)"/>
     <wire from="(280,430)" to="(310,430)"/>
     <wire from="(230,350)" to="(230,450)"/>
@@ -200,7 +200,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(220,450)" to="(230,450)"/>
     <wire from="(210,730)" to="(540,730)"/>
     <wire from="(830,590)" to="(900,590)"/>
-    <wire from="(570,740)" to="(700,740)"/>
+    <wire from="(570,720)" to="(700,720)"/>
     <wire from="(910,560)" to="(910,610)"/>
     <comp lib="12" loc="(780,360)" name="main"/>
     <comp lib="0" loc="(170,450)" name="Pin">
