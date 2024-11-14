@@ -83,6 +83,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="file#rightShifterLib.circ" name="10"/>
   <lib desc="file#Normalizer.circ" name="11"/>
   <lib desc="file#Rounder.circ" name="12"/>
+  <lib desc="file#InPutHandler2.circ" name="13"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -121,5 +122,62 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(280,430)" to="(530,430)"/>
+    <wire from="(440,350)" to="(500,350)"/>
+    <wire from="(170,260)" to="(230,260)"/>
+    <wire from="(170,450)" to="(230,450)"/>
+    <wire from="(660,270)" to="(840,270)"/>
+    <wire from="(500,350)" to="(500,360)"/>
+    <wire from="(370,330)" to="(370,340)"/>
+    <wire from="(330,340)" to="(330,360)"/>
+    <wire from="(230,260)" to="(230,340)"/>
+    <wire from="(500,360)" to="(610,360)"/>
+    <wire from="(300,350)" to="(410,350)"/>
+    <wire from="(300,370)" to="(410,370)"/>
+    <wire from="(530,350)" to="(530,430)"/>
+    <wire from="(650,70)" to="(650,150)"/>
+    <wire from="(660,270)" to="(660,350)"/>
+    <wire from="(640,360)" to="(750,360)"/>
+    <wire from="(840,270)" to="(840,350)"/>
+    <wire from="(370,340)" to="(410,340)"/>
+    <wire from="(840,350)" to="(860,350)"/>
+    <wire from="(230,340)" to="(260,340)"/>
+    <wire from="(230,350)" to="(260,350)"/>
+    <wire from="(630,150)" to="(650,150)"/>
+    <wire from="(640,350)" to="(660,350)"/>
+    <wire from="(300,340)" to="(330,340)"/>
+    <wire from="(230,350)" to="(230,450)"/>
+    <wire from="(620,90)" to="(620,340)"/>
+    <wire from="(330,360)" to="(410,360)"/>
+    <wire from="(280,380)" to="(280,430)"/>
+    <wire from="(630,150)" to="(630,340)"/>
+    <wire from="(530,350)" to="(610,350)"/>
+    <wire from="(780,360)" to="(860,360)"/>
+    <wire from="(300,330)" to="(370,330)"/>
+    <comp lib="0" loc="(650,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="OverFlow"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="12" loc="(780,360)" name="main"/>
+    <comp lib="0" loc="(170,260)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="8" loc="(440,340)" name="main"/>
+    <comp lib="0" loc="(620,90)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="UnderFlow"/>
+    </comp>
+    <comp lib="11" loc="(640,350)" name="main"/>
+    <comp lib="13" loc="(300,330)" name="InputHandler"/>
+    <comp lib="0" loc="(170,450)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
   </circuit>
 </project>
