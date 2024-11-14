@@ -42,7 +42,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#Shifter.circ" name="7"/>
   <main name="22T32"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -76,87 +75,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="main">
-    <a name="circuit" val="main"/>
-    <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
-    <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(420,110)" to="(420,180)"/>
-    <wire from="(250,190)" to="(440,190)"/>
-    <wire from="(560,40)" to="(560,50)"/>
-    <wire from="(510,40)" to="(560,40)"/>
-    <wire from="(250,110)" to="(250,150)"/>
-    <wire from="(440,80)" to="(440,90)"/>
-    <wire from="(450,100)" to="(450,110)"/>
-    <wire from="(430,100)" to="(430,110)"/>
-    <wire from="(420,100)" to="(420,110)"/>
-    <wire from="(440,100)" to="(440,110)"/>
-    <wire from="(450,110)" to="(450,150)"/>
-    <wire from="(430,110)" to="(430,150)"/>
-    <wire from="(250,150)" to="(430,150)"/>
-    <wire from="(510,40)" to="(510,80)"/>
-    <wire from="(560,150)" to="(560,270)"/>
-    <wire from="(250,190)" to="(250,270)"/>
-    <wire from="(450,150)" to="(560,150)"/>
-    <wire from="(240,190)" to="(250,190)"/>
-    <wire from="(440,110)" to="(440,190)"/>
-    <wire from="(440,80)" to="(510,80)"/>
-    <wire from="(380,180)" to="(420,180)"/>
-    <wire from="(380,180)" to="(380,270)"/>
-    <comp lib="0" loc="(380,270)" name="Ground"/>
-    <comp lib="0" loc="(250,110)" name="Power"/>
-    <comp lib="0" loc="(560,50)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="32bitFraction"/>
-    </comp>
-    <comp lib="0" loc="(250,270)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="22"/>
-      <a name="label" val="Fraction"/>
-    </comp>
-    <comp lib="0" loc="(440,90)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="1"/>
-      <a name="bit12" val="1"/>
-      <a name="bit13" val="1"/>
-      <a name="bit14" val="1"/>
-      <a name="bit15" val="1"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="2"/>
-      <a name="bit31" val="3"/>
-    </comp>
-    <comp lib="0" loc="(560,270)" name="Ground">
-      <a name="width" val="10"/>
-    </comp>
-  </circuit>
   <circuit name="22T32">
     <a name="circuit" val="22T32"/>
     <a name="clabel" val="22T32"/>
@@ -178,17 +96,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(320,360)" to="(360,360)"/>
     <wire from="(340,260)" to="(410,260)"/>
     <comp lib="0" loc="(360,340)" name="Power"/>
-    <comp lib="0" loc="(410,280)" name="Ground">
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(550,130)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="label" val="32Fraction"/>
     </comp>
-    <comp lib="1" loc="(1080,460)" name="NOT Gate"/>
-    <comp lib="0" loc="(300,350)" name="Ground"/>
+    <comp lib="0" loc="(410,280)" name="Ground">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(160,200)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="22"/>
+      <a name="label" val="22Fraction"/>
+    </comp>
     <comp lib="0" loc="(330,140)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="4"/>
@@ -226,11 +147,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="2"/>
       <a name="bit31" val="3"/>
     </comp>
-    <comp lib="0" loc="(160,200)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="22"/>
-      <a name="label" val="22Fraction"/>
-    </comp>
+    <comp lib="0" loc="(300,350)" name="Ground"/>
   </circuit>
   <circuit name="Spliter">
     <a name="circuit" val="Spliter"/>
@@ -255,16 +172,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(360,120)" to="(360,150)"/>
     <wire from="(320,120)" to="(360,120)"/>
     <wire from="(220,80)" to="(320,80)"/>
-    <comp lib="0" loc="(80,100)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Input"/>
-    </comp>
+    <comp loc="(390,110)" name="22T32"/>
     <comp lib="0" loc="(340,60)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Sign"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(340,210)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="9"/>
+      <a name="label" val="Exponent"/>
+    </comp>
+    <comp lib="0" loc="(510,160)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Fraction"/>
     </comp>
     <comp lib="0" loc="(200,90)" name="Splitter">
       <a name="fanout" val="3"/>
@@ -302,18 +227,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="1"/>
       <a name="bit31" val="2"/>
     </comp>
-    <comp lib="0" loc="(510,160)" name="Pin">
+    <comp lib="0" loc="(80,100)" name="Pin">
       <a name="facing" val="north"/>
-      <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="Fraction"/>
-    </comp>
-    <comp loc="(390,110)" name="22T32"/>
-    <comp lib="0" loc="(340,210)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="9"/>
-      <a name="label" val="Exponent"/>
+      <a name="label" val="Input"/>
     </comp>
   </circuit>
   <circuit name="Exponant Differentiator">
@@ -397,18 +314,51 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(510,100)" to="(510,160)"/>
     <wire from="(450,560)" to="(450,620)"/>
     <wire from="(580,170)" to="(590,170)"/>
+    <comp lib="2" loc="(380,460)" name="Multiplexer"/>
+    <comp lib="0" loc="(800,130)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="9"/>
+      <a name="label" val="Difference"/>
+    </comp>
+    <comp lib="0" loc="(750,80)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="10"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="1"/>
+    </comp>
     <comp lib="0" loc="(140,190)" name="Pin">
       <a name="width" val="9"/>
       <a name="label" val="ExponantB"/>
+    </comp>
+    <comp lib="0" loc="(100,490)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SignB"/>
     </comp>
     <comp lib="0" loc="(140,80)" name="Pin">
       <a name="width" val="9"/>
       <a name="label" val="ExponantA"/>
     </comp>
+    <comp lib="0" loc="(100,440)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SignA"/>
+    </comp>
+    <comp lib="0" loc="(560,540)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="SamllerSign"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(480,370)" name="Power"/>
-    <comp lib="2" loc="(380,460)" name="Multiplexer"/>
-    <comp lib="3" loc="(700,80)" name="Subtractor">
-      <a name="width" val="10"/>
+    <comp lib="2" loc="(420,260)" name="Multiplexer">
+      <a name="width" val="9"/>
     </comp>
     <comp lib="0" loc="(550,460)" name="Pin">
       <a name="facing" val="west"/>
@@ -416,13 +366,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="LargerSign"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(800,130)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="9"/>
-      <a name="label" val="Difference"/>
-    </comp>
-    <comp lib="2" loc="(400,540)" name="Multiplexer"/>
     <comp lib="0" loc="(610,90)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="incoming" val="10"/>
@@ -442,18 +385,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="9"/>
       <a name="label" val="Larger Exponant"/>
     </comp>
-    <comp lib="2" loc="(420,260)" name="Multiplexer">
-      <a name="width" val="9"/>
-    </comp>
-    <comp lib="3" loc="(280,150)" name="Comparator">
-      <a name="width" val="9"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
     <comp lib="0" loc="(350,30)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="EA&gt;EB"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(400,540)" name="Multiplexer"/>
+    <comp lib="2" loc="(400,110)" name="Multiplexer">
+      <a name="width" val="9"/>
     </comp>
     <comp lib="0" loc="(610,150)" name="Splitter">
       <a name="facing" val="west"/>
@@ -468,37 +408,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit8" val="1"/>
       <a name="bit9" val="0"/>
     </comp>
-    <comp lib="0" loc="(490,30)" name="Ground"/>
-    <comp lib="0" loc="(100,490)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SignB"/>
+    <comp lib="3" loc="(700,80)" name="Subtractor">
+      <a name="width" val="10"/>
     </comp>
-    <comp lib="0" loc="(560,540)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="SamllerSign"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(400,110)" name="Multiplexer">
+    <comp lib="3" loc="(280,150)" name="Comparator">
       <a name="width" val="9"/>
+      <a name="mode" val="unsigned"/>
     </comp>
-    <comp lib="0" loc="(100,440)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SignA"/>
-    </comp>
-    <comp lib="0" loc="(750,80)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="10"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="1"/>
-    </comp>
+    <comp lib="0" loc="(490,30)" name="Ground"/>
   </circuit>
   <circuit name="InputHandler">
     <a name="circuit" val="InputHandler"/>
@@ -601,16 +518,126 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(210,100)" to="(340,100)"/>
     <wire from="(400,40)" to="(400,160)"/>
     <wire from="(560,370)" to="(570,370)"/>
+    <comp lib="0" loc="(170,400)" name="Ground">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(970,540)" name="Power"/>
     <comp lib="0" loc="(1060,400)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Smaller sign"/>
       <a name="labelloc" val="south"/>
     </comp>
+    <comp lib="0" loc="(440,390)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="9"/>
+      <a name="label" val="Exponant Difference"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(180,350)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="9"/>
+      <a name="appear" val="center"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="1"/>
+    </comp>
+    <comp lib="0" loc="(100,200)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="InputB"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp loc="(370,100)" name="Exponant Differentiator"/>
+    <comp lib="0" loc="(570,370)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Samller Fraction"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(560,50)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Larger Fraction"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(260,310)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="2" loc="(450,50)" name="Multiplexer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(840,570)" name="Ground">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(720,270)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="9"/>
+      <a name="appear" val="center"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1010,310)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Shifted Small Fraction"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="InputA"/>
+      <a name="labelloc" val="south"/>
+    </comp>
     <comp lib="0" loc="(120,400)" name="Constant">
       <a name="facing" val="west"/>
       <a name="width" val="5"/>
       <a name="value" val="0x1f"/>
+    </comp>
+    <comp lib="0" loc="(510,20)" name="Power"/>
+    <comp lib="0" loc="(600,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Larger Sign"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(820,170)" name="Shifter">
+      <a name="width" val="32"/>
+      <a name="shift" val="lr"/>
+    </comp>
+    <comp lib="2" loc="(460,150)" name="Multiplexer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="3" loc="(680,220)" name="Comparator">
+      <a name="width" val="9"/>
+    </comp>
+    <comp loc="(230,150)" name="Spliter"/>
+    <comp lib="0" loc="(350,390)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="9"/>
+      <a name="label" val="Larger Exponant"/>
+    </comp>
+    <comp loc="(230,60)" name="Spliter"/>
+    <comp lib="2" loc="(990,310)" name="Multiplexer">
+      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(840,480)" name="Splitter">
       <a name="facing" val="south"/>
@@ -648,114 +675,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit29" val="0"/>
       <a name="bit30" val="0"/>
       <a name="bit31" val="0"/>
-    </comp>
-    <comp lib="0" loc="(570,370)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Samller Fraction"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="3" loc="(820,170)" name="Shifter">
-      <a name="width" val="32"/>
-      <a name="shift" val="lr"/>
-    </comp>
-    <comp lib="0" loc="(260,310)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="9"/>
-    </comp>
-    <comp lib="0" loc="(440,390)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="9"/>
-      <a name="label" val="Exponant Difference"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(100,90)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="InputA"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(840,570)" name="Ground">
-      <a name="width" val="32"/>
-    </comp>
-    <comp loc="(370,100)" name="Exponant Differentiator"/>
-    <comp lib="0" loc="(970,540)" name="Power"/>
-    <comp lib="0" loc="(350,390)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="9"/>
-      <a name="label" val="Larger Exponant"/>
-    </comp>
-    <comp loc="(230,60)" name="Spliter"/>
-    <comp lib="2" loc="(990,310)" name="Multiplexer">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="3" loc="(680,220)" name="Comparator">
-      <a name="width" val="9"/>
-    </comp>
-    <comp loc="(230,150)" name="Spliter"/>
-    <comp lib="0" loc="(170,400)" name="Ground">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="2" loc="(460,150)" name="Multiplexer">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(180,350)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="9"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-      <a name="bit8" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1010,310)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Shifted Small Fraction"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(510,20)" name="Power"/>
-    <comp lib="0" loc="(720,270)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="9"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-      <a name="bit8" val="1"/>
-    </comp>
-    <comp lib="0" loc="(100,200)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="InputB"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(600,110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Larger Sign"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(560,50)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Larger Fraction"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(450,50)" name="Multiplexer">
-      <a name="width" val="32"/>
     </comp>
   </circuit>
 </project>
