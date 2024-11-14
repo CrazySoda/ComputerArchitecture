@@ -73,17 +73,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool name="Text Tool">
       <a name="text" val=""/>
       <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
+      <a name="halign" val="left"/>
       <a name="valign" val="base"/>
     </tool>
   </lib>
   <lib desc="file#logi7400dip.circ" name="7"/>
   <lib desc="file#Adder.circ" name="8"/>
   <lib desc="file#leftShifterLib.circ" name="9"/>
-  <lib desc="file#rightShifterLib.circ" name="10"/>
-  <lib desc="file#Normalizer.circ" name="11"/>
-  <lib desc="file#Rounder.circ" name="12"/>
-  <lib desc="file#InPutHandler2.circ" name="13"/>
+  <lib desc="file#Normalizer.circ" name="10"/>
+  <lib desc="file#Rounder.circ" name="11"/>
+  <lib desc="file#InPutHandler.circ" name="12"/>
+  <lib desc="file#F:\FPA 2-2\2105144\Our FPA\rightShifterLib.circ" name="13"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -101,7 +101,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="6" name="Text Tool">
       <a name="text" val=""/>
       <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
+      <a name="halign" val="left"/>
       <a name="valign" val="base"/>
     </tool>
     <sep/>
@@ -147,7 +147,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(120,630)" to="(210,630)"/>
     <wire from="(640,350)" to="(660,350)"/>
     <wire from="(700,830)" to="(910,830)"/>
-    <wire from="(300,340)" to="(330,340)"/>
     <wire from="(220,610)" to="(690,610)"/>
     <wire from="(900,400)" to="(900,560)"/>
     <wire from="(220,150)" to="(220,260)"/>
@@ -155,6 +154,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(900,400)" to="(930,400)"/>
     <wire from="(200,450)" to="(220,450)"/>
     <wire from="(630,640)" to="(630,760)"/>
+    <wire from="(300,340)" to="(310,340)"/>
     <wire from="(620,90)" to="(620,340)"/>
     <wire from="(200,210)" to="(200,450)"/>
     <wire from="(220,260)" to="(230,260)"/>
@@ -172,12 +172,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(500,350)" to="(500,360)"/>
     <wire from="(200,210)" to="(250,210)"/>
     <wire from="(70,550)" to="(250,550)"/>
-    <wire from="(330,340)" to="(330,360)"/>
+    <wire from="(310,340)" to="(310,360)"/>
     <wire from="(470,360)" to="(470,510)"/>
     <wire from="(70,150)" to="(180,150)"/>
     <wire from="(310,430)" to="(310,510)"/>
     <wire from="(500,360)" to="(610,360)"/>
     <wire from="(530,350)" to="(530,430)"/>
+    <wire from="(310,360)" to="(410,360)"/>
     <wire from="(650,70)" to="(650,150)"/>
     <wire from="(900,590)" to="(900,610)"/>
     <wire from="(640,360)" to="(750,360)"/>
@@ -194,18 +195,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(210,630)" to="(210,730)"/>
     <wire from="(910,640)" to="(910,830)"/>
     <wire from="(560,760)" to="(630,760)"/>
-    <wire from="(330,360)" to="(410,360)"/>
     <wire from="(220,450)" to="(230,450)"/>
     <wire from="(210,730)" to="(540,730)"/>
     <wire from="(830,590)" to="(900,590)"/>
     <wire from="(570,720)" to="(700,720)"/>
     <wire from="(910,560)" to="(910,610)"/>
-    <comp lib="11" loc="(910,350)" name="Rounded Normalizer">
+    <comp lib="10" loc="(910,350)" name="Rounded Normalizer">
       <a name="label" val="R Nrm"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="12" loc="(780,360)" name="main"/>
-    <comp lib="11" loc="(640,350)" name="main">
+    <comp lib="11" loc="(780,360)" name="main"/>
+    <comp lib="10" loc="(640,350)" name="main">
       <a name="label" val="Normalizer"/>
       <a name="labelloc" val="south"/>
     </comp>
@@ -222,6 +222,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Larger Exponent"/>
       <a name="labelloc" val="south"/>
     </comp>
+    <comp lib="12" loc="(300,330)" name="InputHandler"/>
     <comp lib="0" loc="(940,580)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="1"/>
@@ -269,7 +270,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp loc="(180,150)" name="Special Case">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="13" loc="(300,330)" name="InputHandler"/>
     <comp lib="0" loc="(170,450)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
