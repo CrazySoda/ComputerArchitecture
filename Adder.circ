@@ -77,9 +77,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </toolbar>
   <circuit name="main">
     <a name="circuit" val="main"/>
-    <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
-    <a name="clabelfont" val="SansSerif plain 12"/>
+    <a name="clabel" val="ADDER"/>
+    <a name="clabelup" val="north"/>
+    <a name="clabelfont" val="SansSerif bold 12"/>
     <wire from="(400,190)" to="(460,190)"/>
     <wire from="(170,660)" to="(490,660)"/>
     <wire from="(1380,480)" to="(1380,630)"/>
@@ -183,62 +183,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(560,390)" to="(560,440)"/>
     <wire from="(1470,570)" to="(1490,570)"/>
     <wire from="(270,580)" to="(470,580)"/>
-    <comp lib="0" loc="(170,70)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(120,460)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SIGNA"/>
-    </comp>
-    <comp lib="2" loc="(1430,620)" name="Multiplexer"/>
-    <comp lib="3" loc="(500,200)" name="Adder">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="2" loc="(810,440)" name="Multiplexer">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(220,340)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="B"/>
+    <comp lib="1" loc="(690,650)" name="NOT Gate"/>
+    <comp lib="2" loc="(1350,480)" name="Multiplexer"/>
+    <comp lib="6" loc="(1208,134)" name="Text">
+      <a name="text" val="OVERFLOW OF ADDER"/>
     </comp>
     <comp lib="0" loc="(1280,490)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="2" loc="(1020,310)" name="Multiplexer">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(120,520)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SIGNB"/>
-    </comp>
-    <comp lib="3" loc="(680,460)" name="Negator">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(220,140)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="3" loc="(510,570)" name="Comparator">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="6" loc="(1208,134)" name="Text">
-      <a name="text" val="OVERFLOW OF ADDER"/>
-    </comp>
-    <comp lib="1" loc="(690,650)" name="NOT Gate"/>
-    <comp lib="0" loc="(1490,570)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="OUTPUTSIGN"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(1350,480)" name="Multiplexer"/>
-    <comp lib="1" loc="(620,650)" name="XNOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1200,680)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="2" loc="(1210,490)" name="Multiplexer"/>
     <comp lib="0" loc="(1250,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -251,8 +203,59 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
       <a name="label" val="OUTPUT OF WHOLE ADDER "/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="3" loc="(680,460)" name="Negator">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(220,140)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(1200,680)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="2" loc="(1210,490)" name="Multiplexer"/>
+    <comp lib="3" loc="(500,200)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1490,570)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="OUTPUTSIGN"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(810,440)" name="Multiplexer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(120,460)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SIGNA"/>
+    </comp>
+    <comp lib="3" loc="(510,570)" name="Comparator">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(120,520)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SIGNB"/>
+    </comp>
+    <comp lib="2" loc="(1020,310)" name="Multiplexer">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(220,340)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(170,70)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1430,620)" name="Multiplexer"/>
+    <comp lib="1" loc="(620,650)" name="XNOR Gate">
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
 </project>
