@@ -134,8 +134,7 @@ int32_t main()
     MAP_REG_ADD["$t2"]   = "3";
     MAP_REG_ADD["$t3"]   = "4";
     MAP_REG_ADD["$t4"]   = "5";
-    MAP_REG_ADD["$t5"]   = "6";
-    MAP_REG_ADD["$sp"]   = "7";
+    MAP_REG_ADD["$sp"]   = "6";
 
     map<string,string>MAP_INS_OPC;
 

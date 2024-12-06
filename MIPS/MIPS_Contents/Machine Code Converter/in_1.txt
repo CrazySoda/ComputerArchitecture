@@ -1,0 +1,9 @@
+addi $t4, $zero, 12/t4=12
+sw $t4, 1($t4)
+lw $t3, 1($t4)/t3=12
+add $t3, $t3, $t3/t3=24
+beq $zero, $zero, 0
+addi $t0, $zero, 10
+subi $t1, $t0, 1
+addi $t3, $t0, 5
+add $t2, $t3, $t1
