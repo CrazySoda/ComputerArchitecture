@@ -1,0 +1,4 @@
+addi $t0, $zero, 5
+addi $sp, $zero, -2
+sw $t0, 0($sp)
+lw $t1, 0($sp)
